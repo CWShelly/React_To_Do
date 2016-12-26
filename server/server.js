@@ -2,8 +2,9 @@ var path = require('path');
 var express = require('express');
 var app = express();
 
+const dashRouter = require(__dirname + '/routes/dashRouter.js');
 
-
+app.use('/api', dashRouter);
 app.set('port', process.env.PORT || 4000);
 
 if(process.env.NODE_ENV !== 'production') {
