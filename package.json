@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/CWShelly/React_To_Do#readme",
   "dependencies": {
+    "css-loader": "^0.26.1",
     "express-request-proxy": "^2.0.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-loader": "^0.4.4",

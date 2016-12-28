@@ -40,17 +40,23 @@ module.exports = {
                 loaders: [ 'babel-loader?presets[]=react' ]
             },
             {
+                test: /\.css$/,
+                loader: 'style!css!'
+            },
+            {
                 test: /\.html$/, loader: 'html-loader'
             }
         ]
     },
     plugins: [
 
- 
+
         new HtmlWebpackPlugin({
             template: path.join(__dirname, 'src', 'index.html'),
             files: {
+                'css': ['style.css'],
                 'js': ['bundle.js']
+
             }
         }),
         new webpack.HotModuleReplacementPlugin()

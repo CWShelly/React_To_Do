@@ -3,8 +3,10 @@ var express = require('express');
 var app = express();
 
 const dashRouter = require(__dirname + '/routes/dashRouter.js');
+const uniqueTasksRouter = require(__dirname + '/routes/uniqueTasksRouter.js');
 
 app.use('/api', dashRouter);
+app.use('/api', uniqueTasksRouter);
 app.set('port', process.env.PORT || 4000);
 
 if(process.env.NODE_ENV !== 'production') {

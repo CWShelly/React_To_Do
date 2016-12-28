@@ -1,0 +1,6 @@
+exports.seed=(knex)=>{
+
+
+
+
+};
