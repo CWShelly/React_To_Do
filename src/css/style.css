@@ -1,0 +1,30 @@
+body{
+  background: blue
+}
+
+
+#stuff{
+  color: red;
+}
+
+.form2{
+  color: red;
+}
+
+.vert-offset-top-0{
+    margin-top: 0em;
+}
+.vert-offset-top-2{
+    margin-top: 2em;
+}
+
+.todo{
+  background: white
+
+}
+
+.fin{
+  background: green,
+  color:white
+
+}
